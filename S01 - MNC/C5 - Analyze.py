@@ -26,7 +26,7 @@ with open(inputFilePath, "rb") as handle:
     dataV1 = pickle.load(handle)
 df1 = dataV1["df"]
 
-filt = (df1.index < "2023-02-01") & (df1.index > "2022-12-31")
+filt = (df1.index < "2023-04-01") & (df1.index > "2022-12-31")
 df2 = df1[filt]
 
 rNumAll = df2.shape[0]
